@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Filter()</h1>
+
+    <p>Clique em "Teste" para obter todos os elementos na matriz que possuem um valor acima deste número:</p>
+
+    <p><input type="number" id="ageToCheck" value="30"></p>
+    <button onclick="myFunction()">Teste</button>
+
+    <p id="demo"></p>
+
+    <script>
+     let a = Number(prompt('Qual a idade a?'))
+        let b = Number(prompt('Qual a idade b?'))
+        let c = Number(prompt('Qual a idade c?'))
+        let d = Number(prompt('Qual a idade d?'))
+
+        const ages = [a, b, c, d];
+
+        function checkAge(age) {
+            return age > document.getElementById("ageToCheck").value;
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = ages.filter(checkAge);
+        }
+    </script>
+</body>
+</html>

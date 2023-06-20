@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Sigmar&display=swap');
+
+body {
+    
+    text-align: center;
+    background-image: url(back.png);
+  }
+
+div {
+  background-color: #f8e71c;
+  width: 550px;
+  text-align: center;
+  margin-left: 380px;
+  height: 83vh;
+  box-shadow: 0 4px 120px rgb(255, 64, 128);
+  border-radius: 8px;
+    
+}
+p {
+    font-family: "Arial Black", sans-serif;
+    font-size: 24px;
+    color: #ff4081;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #ff4081;
+    box-shadow: 0 4px 8px rgba(255, 64, 128, 0.5);
+  }
+  
+  p#result {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    margin-top: 20px;
+  }
+  
+
+  h1 {
+    font-family: 'Sigmar', cursive;
+    font-size: 48px;
+    color: #ff4081;
+    text-shadow: 2px 2px #333;
+    margin: 50px 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  a {
+    font-family: "Comic Sans MS", cursive, sans-serif;;
+    font-size: 24px;
+    color: #ff4081;
+    text-decoration: none;
+    text-shadow: 2px 2px #333;
+  }
+  
+  a:hover {
+    color: #fff;
+    background-color: #ff4081;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reduce</h1>
+    <p>Subtraindo os números da matriz, começando pela esquerda</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let a = Number(prompt('Qual o valor de a?'))
+        let b = Number(prompt('Qual o valor de b?'))
+        let c = Number(prompt('Qual o valor de c?'))
+
+        const numbers = [a, b, c];
+
+        document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+        function myFunc(total, num) {
+            return total - num;
+        }
+    </script>
+</body>
+</html>

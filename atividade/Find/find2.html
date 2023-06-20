@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find</h1>
+    <p>Clique em "Test" para retornar o valor do primeiro elemento no array que possui um valor acima
+        deste
+        número:</p>
+
+    <p><input type="number" id="ageToCheck" value="18"></p>
+
+    <button onclick="myFunction()">Test</button>
+
+    <p id="demo"></p>
+
+    <script>
+        let a = Number(prompt('Qual a idade a?'))
+        let b = Number(prompt('Qual a idade b?'))
+        let c = Number(prompt('Qual a idade c?'))
+        let d = Number(prompt('Qual a idade d?'))
+
+        const ages = [a, b, c, d];
+        function checkAge(age) {
+            return age > document.getElementById("ageToCheck").value;
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = ages.find(checkAge);
+        }
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reduce</h1>
+    <p>Calculando a soma dos números arredondados em uma matriz</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let a = parseFloat(prompt('Qual o valor de a?'))
+        let b = parseFloat(prompt('Qual o valor de b?'))
+        let c = parseFloat(prompt('Qual o valor de c?'))
+        let d = parseFloat(prompt('Qual o valor de d?'))
+
+        const numbers = [a, b, c, d];
+
+        document.getElementById("demo").innerHTML = numbers.reduce(getSum, 0);
+
+        function getSum(total, num) {
+            return total + Math.round(num);
+        }
+    </script>
+</body>
+</html>

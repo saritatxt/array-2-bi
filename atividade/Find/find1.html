@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find</h1>
+    
+    <p>Coletando o primeiro valor que seja maior de idade</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let a = Number(prompt('Qual a idade a?'))
+        let b = Number(prompt('Qual a idade b?'))
+        let c = Number(prompt('Qual a idade c?'))
+        let d = Number(prompt('Qual a idade d?'))
+
+        const ages = [a, b, c, d];
+        
+        document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+        function checkAge(age) {
+            return age > 18;
+        }
+    </script>
+
+</body>
+</html>
